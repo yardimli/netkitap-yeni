@@ -1,0 +1,1 @@
+[04-Jun-2025 16:33:31 UTC] PHP Fatal error:  Cannot declare class App\Models\Subject, because the name is already in use in F:\GitHub\netkitap-yeni\app\Http\Controllers\SubjectController.php on line 9

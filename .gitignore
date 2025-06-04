@@ -20,3 +20,6 @@ yarn-error.log
 .editorconfig
 package-lock.json
 composer.lock
+/public/template
+/public/images/others
+/public/images/bg-images

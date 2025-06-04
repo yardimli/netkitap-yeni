@@ -1,23 +1,23 @@
-<?php
+<?php namespace App\Models;
 
-	namespace App\Models;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-	use Illuminate\Database\Eloquent\Factories\HasFactory;
-	use Illuminate\Database\Eloquent\Model;
+class Author extends Model
+{
+	use HasFactory;
 
-	class Author extends Model
+	protected $fillable = [
+		'name',
+		'name_tr', // Added
+		'born_death',
+		'image_path',
+		'biography',
+		'biography_tr', // Added
+	];
+
+	public function books()
 	{
-		use HasFactory;
-
-		protected $fillable = [
-			'name',
-			'born_death',
-			'image_path',
-			'biography',
-		];
-
-		public function books()
-		{
-			return $this->hasMany(Book::class);
-		}
+		return $this->hasMany(Book::class);
 	}
+}
